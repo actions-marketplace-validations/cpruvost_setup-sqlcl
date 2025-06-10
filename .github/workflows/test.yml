@@ -27,6 +27,6 @@ jobs:
         uses: cpruvost/setup-sqlcl@v1.0.0
 
       - run: |
-          ./sql -V
-          exit | ./sql ${{ secrets.DB_USER }}/${{ secrets.DB_PASSWORD }}@'${{  secrets.DB_URL }}' @./show_tables.sql
+          ./sqlcl/bin/sql -V
+          exit | ./sqlcl/bin/sql ${{ secrets.DB_USER }}/${{ secrets.DB_PASSWORD }}@'${{  secrets.DB_URL }}' @./show_tables.sql
       
