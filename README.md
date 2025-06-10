@@ -10,7 +10,7 @@ Oracle Sqlcl requires Java so you must setup Java before.
   uses: oracle-actions/setup-java@v1
   with:
     website: oracle.com
-    release: 17 
+    release: 21 
 ```         
 
 # Example usage

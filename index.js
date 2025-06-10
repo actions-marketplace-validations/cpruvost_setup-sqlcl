@@ -12,7 +12,8 @@ async function run() {
     execSync('wget https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-latest.zip');
     execSync('unzip sqlcl-latest.zip');
     
-    //TO_DO : add an alias "sql"
+    //Add an alias "sql"
+    execSync('ln -s ./sqlcl/bin/sql ./sql');
 
   } catch (error) {
     core.setFailed(error.message);
